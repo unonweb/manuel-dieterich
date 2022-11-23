@@ -1,0 +1,38 @@
+:host([theme="tiles"]) .drop-content.active {
+	border: thin solid var(--color-border);
+	box-shadow: 1px 1px 10px #948d8d;
+}
+
+/* theme='vaadin' */
+
+:host([theme='vaadin']) button {
+	font-weight: bold;
+	border: none;
+}
+:host([theme='vaadin']) button:focus {
+	outline-offset: 1px;
+}
+
+/* theme='manu' */
+
+:host([theme='manu']) .drop-content.active {
+	border-bottom: 1px solid var(--primary-color-light);
+  border-right: 1px solid var(--primary-color-light);
+	padding: 2px 17px 5px 0px;
+	left: 55px;
+}
+:host([theme='manu'][lang='en']) .drop-content.active {
+  left: 7px;
+}
+
+@media (width > 1000px) {
+	:host([theme="manu"]) .drop-content.active {
+		margin: 2px 0px 0px 0px;
+		padding: 8px 8px 6px 0px;
+		left: 0px;
+  }
+	:host([theme='manu'][lang='en']) .drop-content.active {
+    left: 0px;
+	}
+}
+}

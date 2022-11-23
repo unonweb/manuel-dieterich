@@ -1,0 +1,8 @@
+:host([theme="manu"]) {
+	width: 100vw;
+	/*! margin: auto; */
+}
+:host([theme="manu"]) ::slotted(img) {
+	object-fit: cover;
+	border: thin solid black;
+}

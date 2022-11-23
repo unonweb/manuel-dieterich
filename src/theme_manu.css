@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Palanquin";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Palanquin"),
+		url("assets/fonts/palanquin-v13-latin-ext-regular.woff2") format("woff2"),
+		url("assets/fonts/palanquin-v13-latin-ext-regular.woff") format("woff");
+}
+
+:root [theme="manu"] {
+	font-family: Palanquin;
+	--primary-color: hsl(50.3, 76.9%, 20.4%);
+	--primary-color-light: hsl(50.3, 76.9%, 40.4%);
+	--secondary-color: hsl(53.3, 25.7%, 93.1%);
+	
+	/* shadow dom */
+	--link-font-family: Palanquin;
+	--link-text-decoration: none;
+	--link-text-decoration-hover: none;
+	--link-text-color: black;
+	--link-text-color-hover: var(--primary-color);
+	
+	--button-text-color: var(--link-text-color);
+	
+}
+
+/* light dom */
+
+:root [theme="manu"] * {
+	font-family: Palanquin;
+}
+:root [theme="manu"] a {
+	color: var(--link-text-color);
+}
+:root [theme="manu"] a:hover {
+	color: var(--primary-color);
+}
+:root [theme="manu"] em {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+}

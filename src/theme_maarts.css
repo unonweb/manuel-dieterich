@@ -1,0 +1,58 @@
+@font-face {
+	font-family: RobotoCondensed-Regular;
+	src: url(/assets/fonts/RobotoCondensed-Regular.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: RobotoCondensed-Light;
+	src: url(/assets/fonts/RobotoCondensed-Light.bec6c491.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(/assets/fonts/Roboto-Regular.bde8a188.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url(/assets/fonts/Roboto-Light.ttf) format("truetype")
+}
+
+:root [theme="maarts"] {
+	color: rgb(51, 51, 51);
+	font-family: RobotoCondensed-Light;
+	/* ok */
+	--back-color-secondary: #122828;
+
+	/* fonts */
+	--font-family-link: Roboto-Regular;
+	--font-color-light: rgb(34, 34, 34);
+	--font-color-medium: rgb(51, 51, 51);
+	--font-color-strong: rgb(77, 77, 77);
+	/* links */
+	--link-back-color-hover: rgb(247, 247, 247);
+	--link-text-color: rgb(180, 136, 75);
+	--link-text-color-hover: hsl(35, 41%, 50%);
+	--link-text-decoration: none;
+	--link-text-decoration-hover: underline solid var(--link-text-color);
+	--link-text-decoration-active: thin solid darkblue;
+	/* buttons */
+	--button-back-color: rgb(247, 247, 247);
+	--button-back-color-hover: hsl(35, 41%, 50%);
+	--button-text-color: black;
+}
+
+:root [theme="maarts"] * {
+	font-family: RobotoCondensed-Light;
+	/* ok */
+}
+
+:root [theme="maarts"] a {
+	color: var(--link-text-color);
+	text-transform: uppercase;
+	text-decoration: var(--link-text-decoration);
+}
+
+:root [theme="maarts"] a:hover {
+	text-decoration: var(--link-text-decoration-hover);
+}

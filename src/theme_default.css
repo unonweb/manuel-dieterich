@@ -1,0 +1,28 @@
+:root {
+	color: black;
+	/* link */
+	--link-back-color: transparent;
+	--link-back-color-hover: transparent;
+	--link-back-color-active: transparent;
+	--link-outline: none;
+	--link-outline-hover: none;
+	--link-text-color: #070f3a;
+	--link-text-color-hover: transparent;
+	--link-text-color-active: black;
+	--link-text-decoration: none;
+	--link-text-decoration-hover: underline solid var(--link-text-color);
+	--link-text-transform: uppercase;
+	/* button */
+	--button-back-color: transparent;
+	--button-back-color-hover: transparent;
+	--button-back-color-active: transparent;
+	--button-font-family: sans;
+	--button-border: none;
+	--button-outline: none;
+	--button-outline-hover: none;
+	--button-outline-focus: none;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+	--button-text-color-active: black;
+	--button-transition-active: background-color 0.1s ease-out;
+}

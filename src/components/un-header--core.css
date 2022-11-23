@@ -1,0 +1,56 @@
+:host {
+	display: block;
+	position: relative;
+	height: clamp(200px, 20vw, 800px);
+	width: 100%;
+	margin: auto;
+}
+::slotted(img) {
+	position: absolute;
+	opacity: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	/*! object-fit: contain; */
+	transition-property: all;
+	transition-duration: 5s;
+	transition-timing-function: ease-in-out;
+}
+::slotted(img.show) {
+	opacity: 1 !important;
+}
+:host([scroll='true']) {
+	overflow: auto;
+}
+
+/* TRANSFX */
+
+:host([transfx='flash']) ::slotted(img) {
+	transition-duration: 0.5s;
+	opacity: 0;
+}
+:host([transfx='flash']) ::slotted(img.show) {
+	opacity: 1 !important;
+}
+:host([transfx='grey']) ::slotted(img) {
+	filter: grayscale(100%);
+}
+:host([transfx='grey']) ::slotted(img.show) {
+	filter: grayscale(0%) !important;
+}
+:host([transfx='blend']) ::slotted(img) {
+	filter: brightness(50%) sepia(50%); /* sepia added for manu */
+}
+:host([transfx='blend']) ::slotted(img.show) {
+	filter: brightness(100%) sepia(50%) !important; /* sepia added for manu */
+}
+:host([transfx='slide']) ::slotted(img) {
+	transform: translateY(-100%);
+	filter: sepia(50%); /* sepia added for manu */
+	opacity: 0;
+}
+:host([transfx='slide']) ::slotted(img.show) {
+	transform: translateX(0%) !important;
+	filter: sepia(50%) !important; /* sepia added for manu */
+	opacity: 1 !important;
+}
