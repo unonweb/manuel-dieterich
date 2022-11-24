@@ -8,6 +8,19 @@ nav {
 	margin-top: clamp(20px, 5vw, 50px);
 	margin-bottom: clamp(20px, 5vw, 50px);
 }
+footer {
+	width: 80vw;
+	margin: auto;
+	border-top: thin solid black;
+}
+.un-log {
+	list-style-type: none;
+	margin: 0;
+	width: 20%;
+	font-size: small;
+	padding: 0;
+	border-bottom: thin dotted gray;
+}
 
 /* BLOG */
 /* ------------------------- */

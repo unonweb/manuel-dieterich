@@ -1,7 +1,5 @@
 :host {
-  
 	padding-right: 35px;
-	
 }
 
 /* BUTTON */
@@ -45,8 +43,7 @@ button:focus {
 :host([overlay]) {
 	position: relative;
 }
-:host([overlay])
-.drop-content {
+:host([overlay]) .drop-content {
 	position: absolute;
 	z-index: 3;
 }
@@ -77,6 +74,7 @@ button:focus {
 	text-decoration-line: var(--link-text-decoration);
 	padding: 5px;
 	border-radius: 5px;
+	background-color: white;
 }
 ::slotted(a:hover) {
 	background-color: var(--link-back-color-hover);

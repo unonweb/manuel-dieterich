@@ -1,9 +1,13 @@
+/* theme='tiles' */
+/* --------------------- */
+
 :host([theme="tiles"]) .drop-content.active {
 	border: thin solid var(--color-border);
 	box-shadow: 1px 1px 10px #948d8d;
 }
 
 /* theme='vaadin' */
+/* --------------------- */
 
 :host([theme='vaadin']) button {
 	font-weight: bold;
@@ -14,25 +18,20 @@
 }
 
 /* theme='manu' */
+/* --------------------- */
 
 :host([theme='manu']) .drop-content.active {
 	border-bottom: 1px solid var(--primary-color-light);
-  border-right: 1px solid var(--primary-color-light);
-	padding: 2px 17px 5px 0px;
-	left: 55px;
+  border-right: 1px solid var(--primary-color-light);	
+	padding: 4px 2px 5px 5px;
+	background-color: white;
+	margin: 1px;
 }
-:host([theme='manu'][lang='en']) .drop-content.active {
-  left: 7px;
+:host([theme='manu']) ::slotted(button) {
+	text-align: left;
 }
-
 @media (width > 1000px) {
-	:host([theme="manu"]) .drop-content.active {
-		margin: 2px 0px 0px 0px;
-		padding: 8px 8px 6px 0px;
-		left: 0px;
-  }
-	:host([theme='manu'][lang='en']) .drop-content.active {
-    left: 0px;
+	:host([theme='manu']) .drop-content.active {
+	 margin: 3px 0px;
 	}
-}
 }

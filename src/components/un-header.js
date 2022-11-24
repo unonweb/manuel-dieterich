@@ -53,7 +53,7 @@ export default class UnHeader extends LitElement {
 				console.log('starting setInterval... ')
 				this._slottedElements.forEach(el => el.style.removeProperty('transition'))
 				setInterval(this.slideImgIndex.bind(this), this.transtime)
-			}, 5000)
+			}, 3000)
 		}
 	}
 

@@ -1,0 +1,34 @@
+:host([theme='manu'][lang='de']) .drop-content.active {
+	left: 57%;
+}
+:host([theme='manu'][lang='en']) .drop-content.active {
+	left: 57%;
+}
+
+@media (width > 370px) {
+	:host([theme='manu'][lang='de']) .drop-content.active {
+    left: 38%;		
+	}
+	:host([theme='manu'][lang='en']) .drop-content.active {
+    left: 2%;
+  }
+}
+@media (width > 420px) {
+  :host([theme="manu"][lang='de']) .drop-content.active {
+		/*! left: -9px; */
+		/*! margin-top: 2px; */
+  }
+	:host([theme="manu"][lang='en']) .drop-content.active {
+		/*left: 2%;*/
+	}
+}
+@media (width > 1000px) {
+	:host([theme="manu"][lang='de']) .drop-content.active {
+		left: -9px;
+		margin-top: 2px;
+  }
+	:host([theme='manu'][lang='en']) .drop-content.active {
+    left: -9px;
+    margin-top: 2px;
+	}
+}

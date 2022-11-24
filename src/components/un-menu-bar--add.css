@@ -35,11 +35,10 @@
     border-bottom: thin solid black;
 }
 :host([theme='manu']) ::slotted(un-drop-down) {
+    /* make a bit space between nav links and drop down */
     margin-top: 8px;
 }
 :host([theme='manu']) ::slotted(*) {
-    margin: 0px 5px;
-	white-space: nowrap;
     font-size: inherit;
 }
 :host([theme='manu']) .right {
@@ -49,11 +48,26 @@
 :host([theme='manu']) .left {
     font-size: 1.3rem;
 }
+:host([theme='manu']) ::slotted(a:hover) {
+    text-decoration: underline solid black;
+}
+:host([theme='manu']) ::slotted(a:active) {
+    text-decoration: underline dotted black;
+}
 
 @media (width > 1000px) {
     :host([theme='manu']) .right {
         flex-direction: row;
         border-left: none;   
+    }
+    :host([theme='manu']) ::slotted(a:hover) {
+        text-decoration: overline solid black;
+    }
+    :host([theme='manu']) ::slotted(a:active) {
+        text-decoration: overline dotted black;
+    }
+    :host([theme='manu']) ::slotted(*) {
+        margin: 0px 5px;
     }
     :host([theme='manu']) ::slotted(un-drop-down) {
         margin-top: 0px;

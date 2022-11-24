@@ -16,7 +16,10 @@
 	/* shadow dom */
 	--link-font-family: Palanquin;
 	--link-text-decoration: none;
-	--link-text-decoration-hover: none;
+	--link-text-decoration-hover: overline solid var(--primary-color);
+	--link-text-decoration-active: overline dotted var(--primary-color);
+	--link-outline-hover: none;
+	--link-outline-active: none;
 	--link-text-color: black;
 	--link-text-color-hover: var(--primary-color);
 	
